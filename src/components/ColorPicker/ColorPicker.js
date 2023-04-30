@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { PureComponent } from 'react';
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
@@ -27,7 +27,7 @@ const Button = styled.button`
   }
 `;
 
-class ColorPicker extends Component {
+class ColorPicker extends PureComponent {
   state = {
     activeOptionIdx: 2,
   };
